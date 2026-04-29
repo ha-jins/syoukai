@@ -155,25 +155,25 @@ export default function App() {
                   title: 'NEON TETRIS',
                   tag: 'パズルエンジン',
                   desc: 'JavaScriptによる古典パズルゲームの再構築。洗練された視覚効果と、滑らかな操作性を追求しました。',
-                  img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBjGAmxADhotNxfxejWTrCOiyL59F-hcj7tMQUWImdGB-6eaFVRSywIKUP-yWh0JvfeaWnpHy0D0IfP_0CMhHHoQFT4VumZyzQ0knbEa80C3KPZKaDopmD-bi8BRe4ADaic-TfOW2avX597Bo95VvpcpoAX7VhVkxztgnHowrsyrwOiTpQ3x82vygHcJdW8KVQZA_8wQOWE300FMYtCtR1_njLbYUHNLSGA8Rdnzb5WRfsaEgfo6umF-PzI9uOgZqLgz3_jMh1FV0hb'
+                  img: '/tetris.jpeg'
                 },
                 {
                   title: 'VOID CRAFT',
                   tag: 'ボクセルワールド',
                   desc: 'UnityとC#を使用したボクセルベースのサンドボックスゲーム。無限生成マップとチャンク管理を実装。',
-                  img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDLfrGsVpxyNTQcdj8Uw0PiD7Mej7YPunY8Z7iy5NA4JJ2Y7nUWjAupT8z-23tN2bXhY00YPzrhtBawWIRFFF7Uz5GNe1_vjopBjjmKGatTfIbcYA-BkP7yCSVZzO0JWrEL2B5DUzOR7l4mjIYb-uI9NHydgZQ3qjpPuM-LtOcrqSUuceHXCNdR2-cRWzCd24mbO8qXSPUaMVl6JcTSxuKi3AClw7hv0r5r5-LJFlIHuPMOGRHSLDuM9BfeYDl7TXMtHht02KSX07B0'
+                  img: '/minecraft.jpeg'
                 },
                 {
                   title: 'CHRONO LEAP',
                   tag: '2Dアクション',
                   desc: '精密な物理演算と加速度制御を重視した2Dプラットフォーマー。ゲームバランスの調整に重点を置きました。',
-                  img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB6mQnNDJ6HKKZX5vMut_VMKuXACJJhgqd5tmGZBUDzk-ZZ64yC84p11j6HJiQHCtEcZLPRVKzMs0AKIQHpMk1yshNXSzQB9N3FNWAEaokiIKWhPFbLzF6AWaE78ufET7p0QjytWXdhyKDJRZk0gMBugKe0LxqLwNorSLS6oTfjbdSFgWaA4LIQcDIKVBHXQposqmL0VolgmvqEKiQVEVDzRpPjfT1wrEkgQ9p1sxzqXeh6UQu3Yowb-d_gImq7FOeEGsMFF337LcC4'
+                  img: '/mario.jpeg'
                 },
                 {
                   title: 'BOMBER HERO',
                   tag: 'アクション / JS',
                   desc: 'JavaScriptとHTML5 Canvasを使用したクラシックなゲーム。爆発の連鎖反応アルゴリズムを独自に実装。',
-                  img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop'
+                  img: '/bomber.jpeg'
                 }
               ].map((project, idx) => (
                 <motion.div
