@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-surface-bg: #101415;
+  --color-neon-cyan: #00e5ff;
+  --color-surface-card: rgba(16, 20, 21, 0.7);
+  
+  --spacing-stack-lg: 64px;
+  --spacing-stack-md: 24px;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-bg text-[#e0e3e5] font-sans selection:bg-neon-cyan/30 selection:text-white;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: var(--color-surface-card);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 229, 255, 0.15);
+  }
+  
+  .glow-hover:hover {
+    border-color: rgba(0, 229, 255, 0.6);
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
+  }
+}
