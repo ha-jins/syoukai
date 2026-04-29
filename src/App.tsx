@@ -160,34 +160,41 @@ export default function App() {
                   title: 'NEON TETRIS',
                   tag: 'パズルエンジン',
                   desc: 'JavaScriptによる古典パズルゲームの再構築。洗練された視覚効果と、滑らかな操作性を追求しました。',
-                  img: 'https://ha-jins.github.io/images/tetris.png'
+                  img: 'https://ha-jins.github.io/images/tetris.png',
+                  url: 'https://tetris-pink-tau.vercel.app/'
                 },
                 {
                   title: 'VOID CRAFT',
                   tag: 'ボクセルワールド',
                   desc: 'UnityとC#を使用したボクセルベースのサンドボックスゲーム。無限生成マップとチャンク管理を実装。',
-                  img: 'https://ha-jins.github.io/images/minecraft.png'
+                  img: 'https://ha-jins.github.io/images/minecraft.png',
+                  url: 'https://ha-jins.github.io/minecraft/'
                 },
                 {
                   title: 'CHRONO LEAP',
                   tag: '2Dアクション',
                   desc: '精密な物理演算と加速度制御を重視した2Dプラットフォーマー。ゲームバランスの調整に重点を置きました。',
-                  img: 'https://ha-jins.github.io/images/mario.png'
+                  img: 'https://ha-jins.github.io/images/mario.png',
+                  url: 'https://ha-jins.github.io/marioo/'
                 },
                 {
                   title: 'BOMBER HERO',
                   tag: 'アクション / JS',
                   desc: 'JavaScriptとHTML5 Canvasを使用したクラシックなゲーム。爆発の連鎖反応アルゴリズムを独自に実装。',
-                  img: 'https://ha-jins.github.io/images/bomber.png'
+                  img: 'https://ha-jins.github.io/images/bomber.png',
+                  url: 'https://ha-jins.github.io/bomberman/'
                 }
               ].map((project, idx) => (
-                <motion.div
+                <motion.a
                   key={project.title}
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
-                  className="glass-card glow-hover group flex flex-col transition-all cursor-pointer h-full"
+                  className="glass-card glow-hover group flex flex-col transition-all cursor-pointer h-full no-underline"
                 >
                   <div className="aspect-video overflow-hidden border-b border-neon-cyan/10">
                     <img
@@ -204,7 +211,7 @@ export default function App() {
                     <h3 className="text-xl font-black text-white mb-3 tracking-wide">{project.title}</h3>
                     <p className="text-sm text-[#bac9cc] leading-relaxed flex-grow">{project.desc}</p>
                   </div>
-                </motion.div>
+                </motion.a>
               ))}
             </div>
           </div>
