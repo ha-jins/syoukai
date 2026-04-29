@@ -81,12 +81,12 @@ export default function App() {
                 テクノロジーとエンターテインメントの境界線を越える。次世代のゲーム体験を創造する、若きデベロッパーの挑戦の軌跡。
               </p>
               <div className="flex gap-4 pt-4">
-                <button className="bg-neon-cyan text-black px-8 py-4 font-bold uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all flex items-center gap-2">
+                <a href="#制作実績" className="bg-neon-cyan text-black px-8 py-4 font-bold uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all flex items-center gap-2 no-underline">
                   プロジェクトを見る <ChevronRight className="w-4 h-4" />
-                </button>
-                <button className="border border-white/20 text-white px-8 py-4 font-bold uppercase tracking-widest hover:bg-white/5 active:scale-95 transition-all">
+                </a>
+                <a href="#自己紹介" className="border border-white/20 text-white px-8 py-4 font-bold uppercase tracking-widest hover:bg-white/5 active:scale-95 transition-all no-underline">
                   自己紹介
-                </button>
+                </a>
               </div>
             </motion.div>
 
