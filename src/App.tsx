@@ -99,11 +99,16 @@ export default function App() {
               <div className="relative group">
                 <div className="absolute inset-0 bg-neon-cyan/20 blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity" />
                 <div className="glass-card p-4 relative border border-neon-cyan/30 overflow-hidden">
-                  <img
-                    alt="Hero Visual"
-                    className="w-full grayscale group-hover:grayscale-0 transition-all duration-700 object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2hHi01kaLnPFtCrY5R7A9yLJjyDaN_Jhoay0QIljDWQPpmDQIdhdZ30LF5Gj7DdzlS_MEWdNvO_QmpsM0N5e-jjWDn6WlZs5kh8gN-qYj9yBq55q_TWB4hIdpp9XpsVOt5ua7UKq_fJ3Mc1YT_qWGMlME3irslvU2z3SUGQBOLhVZoTF7EZN1DVK5BZLuCrCiOTeCWNbbich5-J40TUHY1SUVowlfmksDoQ6Ev8efX20j37A6txWABDI7WJOhV8zWYqsC3KaKEshd"
-                  />
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full transition-all duration-700 object-cover"
+                  >
+                    <source src="https://ha-jins.github.io/images/syoukai.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
             </motion.div>
