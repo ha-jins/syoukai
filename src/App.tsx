@@ -155,25 +155,25 @@ export default function App() {
                   title: 'NEON TETRIS',
                   tag: 'パズルエンジン',
                   desc: 'JavaScriptによる古典パズルゲームの再構築。洗練された視覚効果と、滑らかな操作性を追求しました。',
-                  img: './tetris.png'
+                  img: 'https://ha-jins.github.io/images/tetris.png'
                 },
                 {
                   title: 'VOID CRAFT',
                   tag: 'ボクセルワールド',
                   desc: 'UnityとC#を使用したボクセルベースのサンドボックスゲーム。無限生成マップとチャンク管理を実装。',
-                  img: './minecraft.png'
+                  img: 'https://ha-jins.github.io/images/minecraft.png'
                 },
                 {
                   title: 'CHRONO LEAP',
                   tag: '2Dアクション',
                   desc: '精密な物理演算と加速度制御を重視した2Dプラットフォーマー。ゲームバランスの調整に重点を置きました。',
-                  img: './mario.png'
+                  img: 'https://ha-jins.github.io/images/mario.png'
                 },
                 {
                   title: 'BOMBER HERO',
                   tag: 'アクション / JS',
                   desc: 'JavaScriptとHTML5 Canvasを使用したクラシックなゲーム。爆発の連鎖反応アルゴリズムを独自に実装。',
-                  img: './bomber.png'
+                  img: 'https://ha-jins.github.io/images/bomber.png'
                 }
               ].map((project, idx) => (
                 <motion.div
